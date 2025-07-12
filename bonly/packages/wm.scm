@@ -13,7 +13,6 @@
   #:use-module (gnu packages xdisorg)
   #:use-module (gnu packages gl)
   #:use-module (gnu packages ghostscript)
-  #:use-module (bonly packages admin)
   #:use-module (gnu packages admin)
   #:use-module (gnu packages vulkan)
   #:use-module (gnu packages xorg)

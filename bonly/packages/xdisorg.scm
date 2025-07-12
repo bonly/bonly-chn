@@ -21,6 +21,7 @@
   #:use-module (gnu packages image)
   #:use-module (guix gexp)
   #:use-module (guix git-download)
+  #:use-module (gnu packages xdisorg)
 )
 
 
@@ -40,7 +41,8 @@
         (base32 "02jnln2jg0m1g0835n2g1rf433haz609r00dwnz1dysqk0h2hp56"))
        ;(patches
        ; (search-patches
-       ;  "pixman-CVE-2016-5296.patch"))
+       ;  "pixman-CVE-2016-5296.patch")
+       ;)
        ))
     (build-system meson-build-system)
     ;(arguments
