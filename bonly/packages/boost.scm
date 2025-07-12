@@ -18,7 +18,7 @@
                             version "/source/boost_"
                             (version-with-underscores version) ".tar.bz2"))
         (sha256
-          (base32 "1w482jl80s2bajn3bkf20mwi2p1n1jh290j55vrsf0m3345dkkip")
+          (base32 "46d9d2c06637b219270877c9e16155cbd015b6dc84349af064c088e9b5b12f7b")
         )
       )
     )
