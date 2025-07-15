@@ -21,6 +21,7 @@
   #:use-module (gnu packages image)
   #:use-module (guix gexp)
   #:use-module (guix git-download)
+  #:use-module (bonly package xdisorg)
 )
 
 (define-public wlroots-0.19
