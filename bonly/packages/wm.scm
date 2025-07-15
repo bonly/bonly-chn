@@ -99,7 +99,7 @@
                (commit (string-append "v" version))))
         (file-name (git-file-name name version))
         (sha256
-          (base32 "1i6z5lkbgqlh355vbcxivz470ij76qrj30zyy8nrjvbcdmsxzjdl")
+          (base32 "1i02m8ccc40vm9yg2037yzampvv79wwhfjjd5wnvkbxxgmk9fyhr")
         )
       )
     )
