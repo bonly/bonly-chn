@@ -26,7 +26,7 @@
 (define-public wlroots-0.19
   (package
     (inherit wlroots)
-    (name "wlroots")
+    (name "wlroots-0.19")
     (version "0.19.0")
     (source
       (origin
