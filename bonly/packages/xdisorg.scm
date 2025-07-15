@@ -61,9 +61,8 @@
     (license (list license:expat license:zlib))))
 
 (define-public pixman-cur
-  (package
-    (inherit pixman-0.43)
-    (name "pixman")
+  (package/inherit pixman-0.43
+    (name "pixman-cur")
     (version "0.43.0")
   )
 )
