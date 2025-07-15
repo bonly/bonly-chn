@@ -60,7 +60,7 @@
         libinput-minimal
         libxkbcommon
         mesa
-        pixman-0.43
+        (pixman, "pixman-0.43")
         lcms
         libseat
         vulkan-headers
