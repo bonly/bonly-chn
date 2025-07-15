@@ -21,12 +21,13 @@
   #:use-module (gnu packages image)
   #:use-module (guix gexp)
   #:use-module (guix git-download)
+  #:use-module (bonly packages xdisorg)
 )
 
 (define-public wlroots-0.19
   (package
     (inherit wlroots)
-    (name "wlroots-0.19")
+    (name "wlroots")
     (version "0.19.0")
     (source
       (origin
@@ -59,7 +60,7 @@
         libinput-minimal
         libxkbcommon
         mesa
-        pixman
+        pixman-0.43
         lcms
         libseat
         vulkan-headers
@@ -85,4 +86,23 @@
     (license license:expat)))
 
 
+(define-public swww-0.10
+  (package
+    (inherit swww)
+    (name "swww")
+    (version "0.10.3")
+    (source
+      (origin
+        (method git-fetch)
+        (uri (git-reference
+               (url "https://github.com/LGFae/swww")
+               (commit (string-append "v" version))))
+        (file-name (git-file-name name version))
+        (sha256
+          (base32 "1i6z5lkbgqlh355vbcxivz470ij76qrj30zyy8nrjvbcdmsxzjdl")
+        )
+      )
+    )
+  )
+)
 
