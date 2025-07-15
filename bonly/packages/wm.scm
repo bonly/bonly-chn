@@ -60,7 +60,7 @@
         libinput-minimal
         libxkbcommon
         mesa
-        ("pixman", pixman-0.43)
+        pixman
         lcms
         libseat
         vulkan-headers
@@ -72,7 +72,7 @@
         xorg-server-xwayland))
     (native-inputs
       (cons*
-        pixman
+        pixman-0.43
         glslang
         hwdata
         pkg-config
