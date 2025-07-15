@@ -28,7 +28,7 @@
 (define-public pixman-0.43
   (package
     ;(inherit pixman)
-    (name "pixman-0.43")
+    (name "pixman")
     (version "0.43.0")
     (source
      (origin

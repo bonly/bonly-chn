@@ -21,7 +21,6 @@
   #:use-module (gnu packages image)
   #:use-module (guix gexp)
   #:use-module (guix git-download)
-  #:use-module (bonly package xdisorg)
 )
 
 (define-public wlroots-0.19
@@ -60,7 +59,7 @@
         libinput-minimal
         libxkbcommon
         mesa
-        pixman-0.43
+        pixman
         lcms
         libseat
         vulkan-headers
@@ -72,7 +71,7 @@
         xorg-server-xwayland))
     (native-inputs
       (cons*
-        pixman-0.43
+        pixman
         glslang
         hwdata
         pkg-config
