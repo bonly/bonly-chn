@@ -1,4 +1,5 @@
 (define-module (bonly packages xdisorg)
+  #:use-module (bonly packages cpp)
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix build-system gnu)
@@ -66,3 +67,22 @@
     (version "0.43.0")
   )
 )
+
+(define-public aquamarine-0.9
+  (package/inherit aquamarine
+    (name "aquamarine")
+    (version "0.9.1")
+    (source (origin
+       (method git-fetch)
+       (uri (git-reference
+          (url "https://github.com/hyprwm/aquamarine")
+          (commit (string-append "v" version))))
+       (file-name (git-file-name name version))
+       (sha256
+        (base32 "1c6gyj761c5nl8hck6yqdx80v42684k0gb14xwhp36mz6pilgg6m"))
+    ))
+    (inputs 
+       (modify-inputs (package-inputs aquamarine)
+                      (replace "hyprutils" hyprutils-0.8)
+     ))
+))
