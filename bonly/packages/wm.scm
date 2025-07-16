@@ -151,9 +151,9 @@
   )
 )
 
-(define-public hyprland-0.50-bad
+(define-public hyprland-0.50
    (package/inherit hyprland
-     (name "hyprland")
+     (name "hyprland-bad")
      (version "0.50.0")
      (source (origin
          (method url-fetch)
