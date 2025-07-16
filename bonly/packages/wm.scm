@@ -111,7 +111,7 @@
     (license license:expat)))
 
 
-(define-public swww-0.10-bad
+(define-public swww-0.10
   (package
     (inherit swww)
     (name "swww-bad")
@@ -131,7 +131,7 @@
   )
 )
 
-(define-public swww-0.9-bad
+(define-public swww-0.9
   (package
     (inherit swww)
     (name "swww-bad")

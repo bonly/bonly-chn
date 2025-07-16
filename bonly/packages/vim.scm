@@ -22,10 +22,10 @@
   #:use-module (gnu packages textutils)
 )
 
-(define-public neovim-0.11-bad
+(define-public neovim-0.11
   (package
     (inherit neovim)
-    (name "neovim")
+    (name "neovim-bad")
     (version "0.11.3")
     (source
       (origin

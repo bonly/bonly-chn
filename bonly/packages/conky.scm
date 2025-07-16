@@ -5,10 +5,10 @@
   #:use-module (gnu packages gperf)
 )
 
-(define-public conky-1.22.2-bad
+(define-public conky-1.22.2
   (package
     (inherit conky)
-    (name "conky")
+    (name "conky-bad")
     (version "1.22.2")
     (source
       (origin

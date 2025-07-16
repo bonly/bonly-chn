@@ -3,9 +3,9 @@
   #:use-module (guix packages)
 )
 
-(define-public mesa-25.1.5-bad
+(define-public mesa-25.1.5
   (package/inherit mesa
-    (name "mesa")
+    (name "mesa-bad")
     (version "25.1.5")
 
   )
